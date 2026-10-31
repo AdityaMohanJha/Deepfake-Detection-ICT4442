@@ -1,0 +1,9 @@
+{
+  "best_epoch": 26,
+  "valid_loss": 0.5712900085449218,
+  "accuracy": 0.7158,
+  "precision_fake": 0.7069428461833525,
+  "recall_fake": 0.7372,
+  "f1_fake": 0.7217544546700607,
+  "roc_auc": 0.78114896
+}
