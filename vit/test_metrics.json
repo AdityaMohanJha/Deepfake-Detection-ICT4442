@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.9349,
+  "precision_fake": 0.9281354597361685,
+  "recall_fake": 0.9428,
+  "f1_fake": 0.9354102589542613,
+  "roc_auc": 0.98361216,
+  "decision_threshold": 0.5,
+  "best_checkpoint_epoch": 9,
+  "best_validation_f1": 0.9327229299363057,
+  "test_examples": 10000,
+  "test_real_examples": 5000,
+  "test_fake_examples": 5000,
+  "run_type": "balanced_subset",
+  "seed": 42
+}
