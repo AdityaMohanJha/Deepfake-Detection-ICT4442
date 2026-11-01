@@ -1,0 +1,64 @@
+{
+  "model": "torchvision ViT-B/16",
+  "pretrained_weights": "ImageNet ViT_B_16_Weights.IMAGENET1K_V1",
+  "input_size": 224,
+  "patch_size": 16,
+  "num_patches": 196,
+  "embedding_dim": 768,
+  "transformer_blocks": 12,
+  "attention_heads": 12,
+  "mlp_dimension": 3072,
+  "head_warmup_epochs": 2,
+  "head_learning_rate": 0.001,
+  "fine_tuning_learning_rate": 2e-05,
+  "fine_tuned_encoder_blocks": 2,
+  "weight_decay": 0.01,
+  "batch_size": 32,
+  "max_epochs": 12,
+  "early_stopping_patience": 3,
+  "decision_threshold": 0.5,
+  "seed": 42,
+  "limit_per_class_per_split": 5000,
+  "positive_class": "fake",
+  "label_mapping": {
+    "real": 0,
+    "fake": 1
+  },
+  "dataset_root": "/kaggle/input/datasets/xhlulu/140k-real-and-fake-faces/real_vs_fake/real-vs-fake",
+  "split_counts": {
+    "train": {
+      "total": 10000,
+      "real": 5000,
+      "fake": 5000
+    },
+    "validation": {
+      "total": 10000,
+      "real": 5000,
+      "fake": 5000
+    },
+    "test": {
+      "total": 10000,
+      "real": 5000,
+      "fake": 5000
+    }
+  },
+  "best_epoch": 9,
+  "best_validation_f1": 0.9327229299363057,
+  "training_minutes": 31.978501737117767,
+  "run_type": "balanced_subset",
+  "test_metrics": {
+    "accuracy": 0.9349,
+    "precision_fake": 0.9281354597361685,
+    "recall_fake": 0.9428,
+    "f1_fake": 0.9354102589542613,
+    "roc_auc": 0.98361216,
+    "decision_threshold": 0.5,
+    "best_checkpoint_epoch": 9,
+    "best_validation_f1": 0.9327229299363057,
+    "test_examples": 10000,
+    "test_real_examples": 5000,
+    "test_fake_examples": 5000,
+    "run_type": "balanced_subset",
+    "seed": 42
+  }
+}
